@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Material Inventory Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="form-card">
+    <h3>Building Material Inventory</h3>
+    <div>
+      <form id="myform" action="#">
+        <label for="materialName">Material Name:</label><br>
+        <input type="text" id="materialName" placeholder="Enter material name"><br>
+        <label for="category">Material Category:</label><br>
+        <select name="category" id="category">
+          <option value="Wood">Wood</option>
+          <option value="Cement">Cement</option>
+          <option value="Steel">Steel</option>
+          <option value="Bricks">Bricks</option>
+          <option value="Glass">Glass</option>
+        </select><br>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" placeholder="Enter quantity"><br>
+        <label for="supplierName">Supplier Name:</label><br>
+        <input type="text" id="supplierName" placeholder="Enter supplier name"><br>
+        <label for="costPerUnit">Cost Per Unit (RS):</label><br>
+        <input type="number" id="costPerUnit" placeholder="Enter cost per unit"><br>
+        <button id="addMaterialBtn" type="button">Submit Material</button>
+        <span id="error-message"></span>
+      </form>
+      <div id="materialTable">
+        <h4>Material List</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Material Name</th>
+              <th>Category</th>
+              <th>Quantity</th>
+              <th>Suppiler</th>
+              <th>Cost Per Unit (RS)</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
+      <h4>Inventory Summary:</h4>
+      <p>Total Products: <span id="totalProducts">0</span></p>
+      <p>Most Expensive Product: <span id="mostExpensive">None</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

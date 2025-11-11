@@ -1,0 +1,18 @@
+body{
+    margin: 30px;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#addMaterialBtn{
+    background-color: rgb(76, 175, 80);
+}
+
+#form-card{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}

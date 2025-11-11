@@ -1,0 +1,144 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  color: #333;
+}
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 1rem;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.toolbar {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.toolbar select {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.table-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+th {
+  background-color: #f9f9f9;
+  font-weight: 600;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover {
+  background-color: #fdfdfd;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-logout {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 0.5rem;
+}
+.button-logout:hover {
+  background-color: #c82333;
+}
+
+.button-add {
+  background-color: #28a745;
+  color: white;
+}
+.button-add:hover {
+  background-color: #218838;
+}
+
+.button-cancel {
+  background-color: #6c757d;
+  color: white;
+}
+.button-cancel:hover {
+  background-color: #5a6268;
+}
+
+.button-edit {
+  background-color: #ffc107;
+  color: #212529;
+}
+.button-edit:hover {
+  background-color: #e0a800;
+}
+
+.button-delete {
+  background-color: #dc3545;
+  color: white;
+  margin-left: 0.5rem;
+}
+.button-delete:hover {
+  background-color: #c82333;
+}
+
+.button-view {
+  background-color: #007bff;
+  color: white;
+}
+.button-view:hover {
+  background-color: #0056b3;
+}
+.button-view:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
